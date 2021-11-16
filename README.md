@@ -13,6 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     <img alt="NPM" src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"/>
 </p>
 
+<ul>
+    <li><a target="_blank" rel="noreferrer noopener" href="https://docs.google.com/document/d/1MJT7JFnLbarqp7WHd1phXsDBwDusxnYk/edit?rtpof=true&sd=true" >Product Specs<a/></li>
+ </ul>
+
 ## Available Scripts
 
 In the project directory, you can run:
