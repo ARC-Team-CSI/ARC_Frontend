@@ -1,11 +1,12 @@
 //home page
 import React, { Fragment } from "react";
 import "./styles/Home.css";
-import Typography from "@mui/material/Typography";
-
+import { Typography } from "@mui/material";
+import Navbar from "../layout/Navbar";
 export default function Home() {
   return (
     <Fragment>
+      <Navbar />
       <div className="home-container">
         <img
           className="home-logo"
