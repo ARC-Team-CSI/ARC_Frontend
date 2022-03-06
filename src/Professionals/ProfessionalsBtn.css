@@ -1,0 +1,30 @@
+.professionals{
+    position:absolute ;
+    right: 0;
+    bottom: 0;
+    height: 23%;
+    width: 50%;
+    background-color:rgba(54, 115, 139, 0.3);
+    border: none;
+    
+}
+.title{
+    position: absolute;
+    right: 10%;
+    right: 74.68%;
+    bottom: 50%;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 2vw;
+    color: black;
+}
+
+.description{
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 1vw;
+    color: black;
+}

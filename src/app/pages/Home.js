@@ -2,7 +2,7 @@
 import React, { Fragment } from "react";
 import "./styles/Home.css";
 import Typography from "@mui/material/Typography";
-
+import ProfessionalsBtn from "../../Professionals/ProfessionalBtn";
 export default function Home() {
   return (
     <Fragment>
