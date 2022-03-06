@@ -1,16 +1,13 @@
 import React from "react";
-
 import "./ProfessionalsBtn.css"
-
 function ProfessionalsBtn(){
 
   return (
     <div>
         <button
         className="professionals">
-            <a className href=" " ProfessionalsBtn > Professional </a>
-            
-            <a className="description">Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be </a>
+            <a className ="title"> Professionals </a>
+             <a className="description">Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be </a>
         </button>
     </div>
   )
