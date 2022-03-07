@@ -2,7 +2,8 @@
 import React, { Fragment } from "react";
 import "./styles/Home.css";
 import Typography from "@mui/material/Typography";
-import ProfessionalsBtn from "../../Professionals/ProfessionalBtn";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 export default function Home() {
   return (
     <Fragment>
@@ -19,7 +20,9 @@ export default function Home() {
             vitae mauris sed dolor auctor egestas. Nunc ultrices blandit ligula
             vitae pellentesque.
           </Typography>
+          
         </div>
+        
       </div>
     </Fragment>
   );
