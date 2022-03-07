@@ -1,0 +1,30 @@
+.academics{
+    position:absolute ;
+    left: 0;
+    bottom: 0;
+    height: 23%;
+    width: 50%;
+    background-color:rgba(27, 69, 120, 0.3);
+    border: none;
+    
+}
+.title{
+    position: absolute;
+    left: 10%;
+    right: 74.68%;
+    bottom: 50%;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 2vw;
+    color: white;
+}
+
+.description{
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 1vw;
+    color: white;
+}
