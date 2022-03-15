@@ -1,8 +1,15 @@
 import React from 'react'
+import SecYearTipBtn from '../components/SecYearTipBtn'
 
 const AcademicsPage = () => {
   return (
-    <h1>AcademicsPage</h1>
+    <div>
+      <SecYearTipBtn/>
+    </div>
+
+
+
+   
   )
 }
 
