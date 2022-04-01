@@ -1,40 +1,39 @@
-.academics{
-    position:absolute ;
-    left: 0;
-    bottom: 0;
-    height: 23%;
-    width: 50%;
-    background-color:rgba(27, 69, 120, 0.3);
-    border: none;
-    
+.academics {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 23%;
+  width: 50%;
+  background-color: rgba(27, 69, 120, 0.3);
+  border: none;
 }
-.title{
-    position: absolute;
-    left: 10%;
-    right: 74.68%;
-    bottom: 50%;
-    font-family: Roboto;
-    font-style: Regular;
-    font-size: 2vw;
-    color: white;
-}
-
-.description{
-    position: absolute;
-    left: 10%;
-    bottom: 30%;
-    font-family: Roboto;
-    font-style: Regular;
-    font-size: 1vw;
-    color: white;
+.title {
+  position: absolute;
+  left: 10%;
+  right: 74.68%;
+  bottom: 50%;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 2vw;
+  color: white;
 }
 
-.flowchartBg{
-   position: absolute;
-background-color: rgba(18, 104, 210, 0.8);
-border: none;
-width:50%;
-height:28%;
-top:50%;
-left:0;
+.description {
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 1vw;
+  color: white;
+}
+
+.flowchartBg {
+  position: absolute;
+  background-color: rgba(18, 104, 210, 0.8);
+  border: none;
+  width: 50%;
+  height: 28%;
+  top: 50%;
+  left: 0;
 }

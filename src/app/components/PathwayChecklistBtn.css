@@ -1,0 +1,36 @@
+.pctitle {
+  position: absolute;
+  left: 5%;
+  bottom: 60%;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 2.5vw;
+  color: black;
+}
+hr {
+  border: none;
+  border-top: 2px dashed #7fc0e6;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 92%;
+}
+.pcdescription {
+  position: absolute;
+  left: 10%;
+  bottom: 27%;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 1.5vw;
+  color: black;
+}
+
+.pathwaychecklistBg {
+  position: absolute;
+  background-color: white;
+  border: none;
+  width: 40%;
+  height: 25%;
+  bottom: 0;
+  left: 20%;
+}
