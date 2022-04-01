@@ -5,7 +5,7 @@ function PathwayChecklistBtn() {
     return (
         <div>
             <button
-                onClick={(event) => (window.location.href = "/PathwayChecklist")}
+                onClick={(event) => (window.location.href = "/PathwayChecklistPage")}
                 className="pathwaychecklistBg">
                 <a className="pctitle">
                     Pathway Checklist
