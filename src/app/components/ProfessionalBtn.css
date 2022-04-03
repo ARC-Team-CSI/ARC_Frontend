@@ -1,0 +1,31 @@
+.professional {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 23%;
+    width: 50%;
+    background-color:  #4256744D;
+    border: none;
+  }
+
+.ptitle {
+    position: absolute;
+    left: 10%;
+    right: 74.68%;
+    bottom: 50%;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 2vw;
+    color: black;
+  }
+  
+.pdescription {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 1vw;
+    color: black;
+  }
+  

@@ -1,0 +1,33 @@
+.rtitle {
+    position: absolute;
+    width: 132px;
+    height: 84px;
+    left: 1498px;
+    top: 712px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color:  #000000;
+    }
+    
+    .resume{
+    position: absolute;
+    width: 381px;
+    height: 187px;
+    left: 1462px;
+    top: 663px;
+    background: #0072B1;
+    border-radius: 20px;
+    }
+    
+    .rarrow2 {
+    position: absolute;
+    width: 87.05px;
+    height: 0px;
+    left: 1718px;
+    top: 800px;
+    border: 3px solid #140101;
+    box-sizing: border-box;
+    }
