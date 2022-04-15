@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import { Button } from '@mui/material';
-import {Typography} from '@mui/material';
+import { Button} from '@mui/material';
+import { Typography } from '@mui/material';
 
-function ButtonBasic(title, description, size, color) {
+function ButtonBasic({title, description, size, color}) {
     return (
-        <div>
+        <>
             <Button variant='contained' size= {size} color = {color}>
-                <Typography variant='h3' gutterBottom> {title} </Typography>
-                <Typography variant = 'body1'> {description} </Typography>
+
+                <Typography variant='h3'> {title} </Typography>
+                <Typography variant = 'subtitle1'> {description} </Typography>
+
             </Button>
-        </div>
+        </>
     );
 }
 
@@ -18,7 +20,7 @@ function ButtonBasic(title, description, size, color) {
 *  Title - name of the button
 *  color - primary, secondary, warning, success, etc.
 *  description: description of the button
-*  size: small, medium, large.
+*  size: small, lm
 * */
 
 ButtonBasic.propTypes = {
@@ -31,7 +33,7 @@ ButtonBasic.propTypes = {
 ButtonBasic.defaultProps = {
     title: "Test Button",
     color: "primary",
-    size: "large",
+    size: "medium",
     description: "I am a default test button prop"
 }
 

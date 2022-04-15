@@ -1,14 +1,11 @@
 import React from 'react'
-import SecYearTipBtn from '../components/SecYearTipBtn'
-import Flowchartbtn from '../components/Flowchartbtn'
-import PathwayChecklistBtn from '../components/PathwayChecklistBtn'
+import ButtonBasic from "../components/ButtonBasic";
+import '../styles/AcademicPage.css';
 
 const AcademicsPage = () => {
   return (
     <div>
-      <SecYearTipBtn />
-      <Flowchartbtn />
-      <PathwayChecklistBtn />
+        <ButtonBasic title="Adam" description="Test" size="large" color="primary"/>
     </div>
 
   )

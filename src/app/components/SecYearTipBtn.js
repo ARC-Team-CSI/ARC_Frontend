@@ -1,10 +1,10 @@
 import React from 'react'
-import academicBackground from './academicBackground.jpg'
 import "./SecYearTipBtn.css"
 
 const SecYearTipBtn = () => {
   return (
-    <div style={{ objectFit: "cover", width: "100vw", height: "100vh", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundImage: `url(${academicBackground})` }}>
+
+    <div style={{ objectFit: "cover", width: "100vw", height: "100vh", backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
       <div
 
         className='rectangle'>
