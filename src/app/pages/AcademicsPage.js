@@ -7,18 +7,23 @@ import '../styles/AcademicPage.css';
 const AcademicsPage = () => {
   return (
     <div>
-        <Grid container={true} spacing={3} mt={3} mb={3} direction="row" justifyContent="space-evenly" alignItems="end" >
-            <Grid item xs={3}>
-            <ButtonBasic title="Academics" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="primary"/>
+        <Grid container={true} spacing={3} mt={3} mb={3} direction="row" justifyContent="space-evenly" alignItems="center" >
+            <Grid item xs={5}>
+            <ButtonBasic title="Academics" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="primary" link="/"/>
             </Grid>
 
-            <Grid item xs={3}>
-                <ButtonBasic title="Pathway" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="secondary"/>
+            <Grid item xs={5}>
+                <ButtonBasic title="Flow Chart" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="secondary"/>
             </Grid>
 
-            <Grid item xs={3}>
-                <ButtonBasic title="Professional" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="success"/>
+            <Grid item xs={5}>
+                <ButtonBasic title="Freshman Tips" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="success"/>
             </Grid>
+
+            <Grid item xs={5}>
+                <ButtonBasic title="Sophomore Tips" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="success"/>
+            </Grid>
+
         </Grid>
     </div>
 

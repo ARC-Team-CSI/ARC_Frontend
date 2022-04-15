@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { Button, Typography, Card, CardContent, CardActions} from '@mui/material';
 
-function ButtonBasic({title, description, size, color, bgColor}) {
+function ButtonBasic({title, description, size, color, bgColor, link}) {
     return (
         <>
-            <Card sx={{minWidth: 300}} style={{backgroundColor: bgColor, color: ""}}>
+            <Card sx={{minWidth: 300}} style={{backgroundColor: bgColor}}>
                 <CardContent>
                     <Typography variant='h3'> {title} </Typography>
                     <span>
@@ -13,7 +13,7 @@ function ButtonBasic({title, description, size, color, bgColor}) {
                 </span>
                 </CardContent>
                 <CardActions style = {{display: "flex", justifyContent: "center"}}>
-            <Button variant='contained' size= {size} color = {color}>
+            <Button variant='contained' href= {link} size= {size} color = {color}>
                     <h5> Go to the section </h5>
             </Button>
                 </CardActions>
@@ -35,7 +35,8 @@ ButtonBasic.propTypes = {
     color: PropTypes.string,
     bgColor: PropTypes.string,
     size: PropTypes.string,
-    description: PropTypes.string
+    description: PropTypes.string,
+    link: PropTypes.string
 }
 
 ButtonBasic.defaultProps = {
@@ -43,7 +44,8 @@ ButtonBasic.defaultProps = {
     color: "primary",
     size: "medium",
     bgColor: "white",
-    description: "I am a default test button prop"
+    description: "I am a default test button prop",
+    link: "https://google.com"
 }
 
 
