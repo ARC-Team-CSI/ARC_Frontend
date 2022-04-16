@@ -4,10 +4,14 @@ code {
 
     
 }
+
+
 body {
   margin: 0;
-padding: 0;
+  padding: 0;
+  /* For styling purposes I have removed this linear Gradient for now - Adam
   background: linear-gradient(45deg, #1d4167 -61.1%, #85bbf3 9.61%);
   box-shadow: inset 81.5207px -81.5207px 115.288px rgba(23, 53, 84, 0.5),
     inset -81.5207px 81.5207px 115.288px rgba(71, 162, 254, 0.5);
+   */
 }
