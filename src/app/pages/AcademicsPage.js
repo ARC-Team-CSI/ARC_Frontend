@@ -1,7 +1,6 @@
 import React from 'react'
 import {Grid} from "@mui/material";
 import ButtonBasic from "../components/ButtonBasic";
-
 import '../styles/AcademicPage.css';
 
 /* @Adam Dev.
@@ -13,25 +12,47 @@ import '../styles/AcademicPage.css';
 
 const AcademicsPage = () => {
   return (
-    <div>
-        <Grid container sx={{flexDirection: {xs: "column", md: "row"}}} spacing={3} mt={10} mb={3}  justifyContent="space-evenly" alignItems="center" >
-            <Grid item xs={5}>
-            <ButtonBasic title="Academics" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="primary" link="/"/>
+    <div className= "containerSplit">
+
+        {/* This is a fake Nav bar to be deleted - Adam */}
+
+        <header id="masthead" className="masthead">
+
+
+            <section className="logo">
+                <h1 className="site-title">Project ARC</h1>
+            </section>
+
+            <nav className="main-nav">
+                <ul className="nav-menu">
+                    <li className="nav-menu-item"><a href="#">Item 1</a></li>
+                    <li className="nav-menu-item"><a href="#">Item 2</a></li>
+                    <li className="nav-menu-item"><a href="#">Item 3</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div className = "firstHalf">
+
+        </div>
+
+        <div className="secondHalf">
+            <Grid container sx={{flexDirection: {xs: "column", md: "row"}, justifyContent: {xs: "center", md: "space-around"}, alignContent: {xs: "center", md: "space-around"}}}  >
+                <Grid item xs={3} mt={5}>
+                    <ButtonBasic title="Flowchart" description="" size="small" color="primary" link="/"/>
+                </Grid>
+
+                <Grid item xs={3} mt={5}>
+                    <ButtonBasic title="Pathways" description="" size="small" color="secondary"/>
+                </Grid>
+
+                <Grid item xs={3} mt={5}>
+                    <ButtonBasic title="Checklist" description="" size="small" color="success"/>
+                </Grid>
             </Grid>
 
-            <Grid item xs={5}>
-                <ButtonBasic title="Flow Chart" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="secondary"/>
-            </Grid>
-
-            <Grid item xs={5}>
-                <ButtonBasic title="Freshman Tips" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="success"/>
-            </Grid>
-
-            <Grid item xs={5}>
-                <ButtonBasic title="Sophomore Tips" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="success"/>
-            </Grid>
-
-        </Grid>
+        </div>
     </div>
 
   )

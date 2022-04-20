@@ -1,6 +1,69 @@
-body {
+
+/*body {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../assests/academicBackground.jpg")
+} */
+
+.containerSplit {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.firstHalf {
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("../assests/profBG.jpg") no-repeat center;
+    background-size: cover;
+    height: 50%;
+    top: 0;
+}
+
+.secondHalf {
+    background-color: white;
+    background-size: cover;
+    bottom: 0;
+    flex: 1;
+    height: 50%;
+}
+
+.masthead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #ddd;
+    box-shadow: 0 5px 20px 2px #0000004d
+}
+
+.site-title {
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 375px) {
+    .nav-menu {
+        margin: 0;
+    }
+}
+
+.nav-menu-item {
+    margin-right: 1rem;
+}
+
+@media (min-width: 400px) {
+    .nav-menu-item {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
 }
