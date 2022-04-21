@@ -47,15 +47,15 @@ const AcademicsPage = () => {
         <div className="secondHalf">
             <Grid container sx={{flexDirection: {xs: "column", md: "row"}, justifyContent: {xs: "center", md: "space-around"}, alignContent: {xs: "center", md: "space-around"}}}  >
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Flowchart" description="" size="small" color="primary" link="/"/>
+                    <ButtonBasic title="Flowchart" size="small" color="primary" link="/"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Pathways" description="" size="small" color="secondary"/>
+                    <ButtonBasic title="Pathways" size="small" color="secondary"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Checklist" description="" size="small" color="success"/>
+                    <ButtonBasic title="Tips" size="small" color="success"/>
                 </Grid>
             </Grid>
 
