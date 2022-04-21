@@ -1,17 +1,17 @@
 import React from 'react'
 import './AcademicsBtn.css'
-
+import {Link} from 'react-router-dom'
 function AcademicsBtn(){
 
   return (
     <div>
-        <button
-        onClick={(event) => (window.location.href = "/Academics")}
-        className='academics'>
+        <Link to="/Academics">
+        <button className='academics'>
             <a className='title'>Academics</a>
             <br/>
             <a className='description'>Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be </a>
         </button>
+        </Link>
     </div>
   )
 }
