@@ -7,7 +7,7 @@
 } */
 
 .containerSplit {
-    position: fixed;
+    position: relative;
     left: 0;
     right: 0;
     height: 100%;
@@ -16,16 +16,18 @@
 .firstHalf {
     background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("../assests/profBG.jpg") no-repeat center;
     background-size: cover;
-    height: 50%;
+    height: 25rem;
     top: 0;
 }
 
 .secondHalf {
+    position: relative;
     background-color: white;
     background-size: cover;
     bottom: 0;
     flex: 1;
     height: 50%;
+    margin-bottom: 20px;
 }
 
 .masthead {

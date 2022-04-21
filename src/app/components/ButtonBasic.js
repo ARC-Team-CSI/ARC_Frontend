@@ -8,7 +8,7 @@ function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
                 <Grid item sm={12}>
             <Card sx={{minWidth: 250}} style={{backgroundColor: bgColor}}>
                     <CardMedia
-                        component="img"
+                        component= "img"
                         height="140"
                         image= {image}
                         alt= {alt}
@@ -32,9 +32,10 @@ function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
 *  Title - name of the button
 *  color - primary, secondary, warning, success, etc.
 *  bg-color - any basic color in css (red, pink, blue etc.)
-*  description: description of the button
 *  size: small, medium, large
 *  link: Add a link to button!
+*  image: Add the url to image
+*  alt: adds details for accesibility.
 * */
 
 ButtonBasic.propTypes = {
@@ -50,7 +51,7 @@ ButtonBasic.propTypes = {
 ButtonBasic.defaultProps = {
     title: "Test Button",
     color: "primary",
-    size: "medium",
+    size: "medium" ,
     bgColor: "white",
     description: "I am a default test button prop",
     link: "https://google.com",
