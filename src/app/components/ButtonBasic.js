@@ -6,15 +6,18 @@ function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
     return (
         <>
                 <Grid item sm={12}>
-            <Card sx={{minWidth: 250}} style={{backgroundColor: bgColor}}>
+            <Card sx={{minWidth: 250}}  style={{backgroundColor: bgColor}}>
                     <CardMedia
                         component= "img"
                         height="140"
                         image= {image}
                         alt= {alt}
+                        sx = {{'&:hover': {
+                                filter: "grayscale(100%)"
+                            }}}
                     />
                 <CardActions>
-                    <Button href= {link} size= {size} color = {color}>
+                    <Button variant={"outlined"} href= {link} size= {size} color = {color}>
                         <h5> {title} </h5>
                     </Button>
                     <Button href= {link} size= {size} color = {color}>
