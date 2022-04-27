@@ -2,6 +2,12 @@ import React from 'react';
 import PropTypes from "prop-types";
 import {Button, Card,  CardActions, CardMedia, Grid} from '@mui/material';
 
+/*
+        @Adam Dev 4.27.2022
+        -Amena Link Push
+
+ */
+
 function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
     return (
         <>
