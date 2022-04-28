@@ -1,6 +1,7 @@
 import React from 'react'
 import {Grid} from "@mui/material";
 import ButtonBasic from "../components/ButtonBasic";
+import ResponsiveAppBar from '../components/ResponsiveAppBar';
 
 import '../styles/AcademicPage.css';
 
@@ -14,6 +15,10 @@ import '../styles/AcademicPage.css';
 const AcademicsPage = () => {
   return (
     <div>
+      <ResponsiveAppBar/>
+
+
+      
         <Grid container sx={{flexDirection: {xs: "column", md: "row"}}} spacing={3} mt={10} mb={3}  justifyContent="space-evenly" alignItems="center" >
             <Grid item xs={5}>
             <ButtonBasic title="Academics" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="primary" link="/"/>
