@@ -14,25 +14,6 @@ const AcademicsPage = () => {
   return (
     <div className= "containerSplit">
 
-        {/* This is a fake Nav bar to be deleted - Adam */}
-
-        <header id="masthead" className="masthead">
-
-
-            <section className="logo">
-                <h1 className="site-title">Project ARC</h1>
-            </section>
-
-            <nav className="main-nav">
-                <ul className="nav-menu">
-                    <li className="nav-menu-item"><a href="#">Item 1</a></li>
-                    <li className="nav-menu-item"><a href="#">Item 2</a></li>
-                    <li className="nav-menu-item"><a href="#">Item 3</a></li>
-                </ul>
-            </nav>
-
-        </header>
-
         <div className = "firstHalf">
             <Typography variant="h2" component="h1" pt={10} px={10} >
                 Academics

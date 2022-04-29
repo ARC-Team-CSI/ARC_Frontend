@@ -20,7 +20,7 @@ function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
     return (
         <>
                 <Grid item sm={12} style={style}>
-            <Card sx={{minWidth: "30%",
+            <Card sx={{minWidth: "250px",
                        '&:hover': { boxShadow: "-1px 10px 29px 0px  rgba(0,0,0,0.8)",
                                     transform: "scale(1.03)",
                                     transition: "all ease 200ms",
