@@ -8,18 +8,31 @@ import {Button, Card,  CardActions, CardMedia, Grid} from '@mui/material';
 
  */
 
+
 function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
+    const style = {
+        backgroundColor: bgColor,
+        height: '20%',
+        transition: "all ease 200ms",
+        boxShadow: "0px 1px 2px 0px rgba(0,0,0,0.4)",
+    }
+
     return (
         <>
-                <Grid item sm={12}>
-            <Card sx={{minWidth: 250}}  style={{backgroundColor: bgColor}}>
+                <Grid item sm={12} style={style}>
+            <Card sx={{minWidth: "30%",
+                       '&:hover': { boxShadow: "-1px 10px 29px 0px  rgba(0,0,0,0.8)",
+                                    transform: "scale(1.03)",
+                                    transition: "all ease 200ms",
+                       },
+            }}  >
                     <CardMedia
                         component= "img"
                         height="140"
                         image= {image}
                         alt= {alt}
                         sx = {{'&:hover': {
-                                filter: "grayscale(100%)"
+                                filter: "grayscale(100%)",
                             }}}
                     />
                 <CardActions>

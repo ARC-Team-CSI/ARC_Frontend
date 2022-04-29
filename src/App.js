@@ -6,6 +6,7 @@ import ProfessionalPage from "./app/pages/ProfessionalPage";
 import FirstYearTipPage from "./app/pages/FirstYearTipPage";
 import SecYearTipPage from "./app/pages/SecYearTipPage";
 
+
 function App() {
   return (
     <div className="App">
