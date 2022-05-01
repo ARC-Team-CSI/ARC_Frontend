@@ -5,8 +5,10 @@ import './Home.css'
 
 function Home() {
   return (
-    <><div><AcademicsBtn /></div>
-    <div><ProfessionalBtn /></div></>
+    <>
+      <div><AcademicsBtn /></div>
+    <div><ProfessionalBtn /></div>
+    </>
   )
 }
 

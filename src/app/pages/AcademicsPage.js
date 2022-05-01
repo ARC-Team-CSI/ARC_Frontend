@@ -1,7 +1,6 @@
 import React from 'react'
-import {Grid} from "@mui/material";
+import {Box, Grid, Typography} from "@mui/material";
 import ButtonBasic from "../components/ButtonBasic";
-
 import '../styles/AcademicPage.css';
 
 /* @Adam Dev.
@@ -13,25 +12,35 @@ import '../styles/AcademicPage.css';
 
 const AcademicsPage = () => {
   return (
-    <div>
-        <Grid container sx={{flexDirection: {xs: "column", md: "row"}}} spacing={3} mt={10} mb={3}  justifyContent="space-evenly" alignItems="center" >
-            <Grid item xs={5}>
-            <ButtonBasic title="Academics" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="primary" link="/"/>
+    <div className= "containerSplit">
+
+        <div className = "firstHalf">
+            <Typography variant="h2" component="h1" pt={10} px={10} >
+                Academics
+            </Typography>
+            <Box width={"300px"} px={10}>
+            <Typography variant="subtitle1" component="p"  display={"inline"} >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, atque deserunt, dolore impedit ipsum molestiae officia perspiciatis quasi quisquam rerum totam voluptatem! Aperiam deleniti labore magnam, maiores minus odio placeat.
+            </Typography>
+            </Box>
+        </div>
+
+        <div className="secondHalf">
+            <Grid container sx={{flexDirection: {xs: "column", md: "row"}, justifyContent: {xs: "center", md: "space-around"}, alignContent: {xs: "center", md: "space-around"}}}  >
+                <Grid item xs={3} mt={5}>
+                    <ButtonBasic title="Flowchart" size="small" color="primary" link="/" image = "/images/FlowChart.png"/>
+                </Grid>
+
+                <Grid item xs={3} mt={5}>
+                    <ButtonBasic title="Pathways" size="small" color="secondary" image = "/images/PCheckList.png"/>
+                </Grid>
+
+                <Grid item xs={3} mt={5}>
+                    <ButtonBasic title="Tips" size="small" color="success" image = "/images/StdTip.jpg"/>
+                </Grid>
             </Grid>
 
-            <Grid item xs={5}>
-                <ButtonBasic title="Flow Chart" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="secondary"/>
-            </Grid>
-
-            <Grid item xs={5}>
-                <ButtonBasic title="Freshman Tips" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="success"/>
-            </Grid>
-
-            <Grid item xs={5}>
-                <ButtonBasic title="Sophomore Tips" description="Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be" size="large" color="success"/>
-            </Grid>
-
-        </Grid>
+        </div>
     </div>
 
   )
