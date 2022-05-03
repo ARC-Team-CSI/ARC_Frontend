@@ -2,6 +2,7 @@ import React from 'react'
 import {Box, Grid, Typography} from "@mui/material";
 import ButtonBasic from "../components/ButtonBasic";
 import '../styles/AcademicPage.css';
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
 /* @Adam Dev.
    Academics page update! USER Story 2.3 mixed with previous USER Story 1.3
@@ -13,7 +14,7 @@ import '../styles/AcademicPage.css';
 const AcademicsPage = () => {
   return (
     <div className= "containerSplit">
-
+    <ResponsiveAppBar/>
         <div className = "firstHalf">
             <Typography variant="h2" component="h1" pt={10} px={10} >
                 Academics
