@@ -5,8 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import { purple } from '@mui/material/colors'
-import { Container } from 'react-bootstrap';
 
 
 
@@ -16,7 +14,7 @@ function ResponsiveAppBar() {
   
   return (
     <Box sx={{ flexGrow: 1 }} className="AppBar">
-      <AppBar position="static" color = "primary">
+      <AppBar position="static" color = "secondary">
         <Toolbar>
           <IconButton
             size="large"
