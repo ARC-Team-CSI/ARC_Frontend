@@ -15,16 +15,18 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const years = {
-    freshman: ["Milestones fake text", "todo fake text", "Summer fake text"],
-    sophomore: ["Milestones fake text", "todo fake text", "Summer fake text"],
-    junior: ["Milestones fake text", "todo fake text", "Summer fake text"],
-    senior: ["Milestones fake text", "todo fake text", "Summer fake text"],
-}
+
 
 function SimpleAccordion(schoolYear) {
     const classes = useStyles();
-    const {name} = schoolYear;
+    const name = {...schoolYear};
+
+    const years = {
+        freshman: ["Freshman Milestones fake text", " Freshman todo fake text", " Freshman Summer fake text"],
+        sophomore: [" Sophomore Milestones fake text", " Sophomore todo fake text", " Sophomore Summer fake text"],
+        junior: ["Junior Milestones fake text", " Junior todo fake text", " Junior Summer fake text"],
+        senior: ["Senior Milestones fake text", "Senior todo fake text", " Senior Summer fake text"],
+    }
 
     return (
         <div>
@@ -37,7 +39,7 @@ function SimpleAccordion(schoolYear) {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        {years[name][0]}
+                        {years[name.schoolYear][0]}
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -50,7 +52,7 @@ function SimpleAccordion(schoolYear) {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        {years[schoolYear][1]}
+                        {years[name.schoolYear][1]}
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -62,7 +64,7 @@ function SimpleAccordion(schoolYear) {
                     <Typography className={classes.heading}>Summer</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    {years[schoolYear][2]}
+                    {years[name.schoolYear][2]}
                 </AccordionDetails>
             </Accordion>
         </div>

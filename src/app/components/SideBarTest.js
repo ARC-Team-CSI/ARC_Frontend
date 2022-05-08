@@ -53,9 +53,10 @@ function PermanentDrawerLeft() {
             <Toolbar>
             <Divider />
                 <Tabs  orientation="vertical" variant="scrollable" value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab label="Item One" {...a11yProps(0)} />
-                    <Tab label="Item Two" {...a11yProps(1)} />
-                    <Tab label="Item Three" {...a11yProps(2)} />
+                    <Tab label="Freshman" {...a11yProps(0)} />
+                    <Tab label="Sophomore" {...a11yProps(1)} />
+                    <Tab label="Junior" {...a11yProps(2)} />
+                    <Tab label="Senior" {...a11yProps(3)} />
                 </Tabs>
             </Toolbar>
         </div>
@@ -98,13 +99,16 @@ function PermanentDrawerLeft() {
                 <Toolbar />
 
                 <TabPanel value={value} index={0}>
-                <SimpleAccordion/>
+                <SimpleAccordion schoolYear = "freshman"/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    Item Two
+                    <SimpleAccordion schoolYear = "sophomore"/>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    Item Three
+                    <SimpleAccordion schoolYear = "junior"/>
+                </TabPanel>
+                <TabPanel value={value} index={3}>
+                    <SimpleAccordion schoolYear = "senior"/>
                 </TabPanel>
 
                 { /* Working on Clicking Functionality. */
