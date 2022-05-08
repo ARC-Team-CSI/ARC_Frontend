@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-
+import SimpleAccordion from "./Accordion";
 
 const drawerWidth = 240;
 
@@ -98,7 +98,7 @@ function PermanentDrawerLeft() {
                 <Toolbar />
 
                 <TabPanel value={value} index={0}>
-                    Item One
+                <SimpleAccordion/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     Item Two
