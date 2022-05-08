@@ -15,8 +15,16 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function SimpleAccordion() {
+const years = {
+    freshman: ["Milestones fake text", "todo fake text", "Summer fake text"],
+    sophomore: ["Milestones fake text", "todo fake text", "Summer fake text"],
+    junior: ["Milestones fake text", "todo fake text", "Summer fake text"],
+    senior: ["Milestones fake text", "todo fake text", "Summer fake text"],
+}
+
+function SimpleAccordion(schoolYear) {
     const classes = useStyles();
+    const {name} = schoolYear;
 
     return (
         <div>
@@ -25,12 +33,11 @@ function SimpleAccordion() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <Typography className={classes.heading}>Accordion 1</Typography>
+                    <Typography className={classes.heading}>Milestones</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                        {years[name][0]}
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -39,22 +46,24 @@ function SimpleAccordion() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography className={classes.heading}>Accordion 2</Typography>
+                    <Typography className={classes.heading}>Todo</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                        {years[schoolYear][1]}
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion disabled>
+            <Accordion>
                 <AccordionSummary
                     aria-controls="panel3a-content"
                     id="panel3a-header"
                 >
-                    <Typography className={classes.heading}>Disabled Accordion</Typography>
+                    <Typography className={classes.heading}>Summer</Typography>
                 </AccordionSummary>
+                <AccordionDetails>
+                    {years[schoolYear][2]}
+                </AccordionDetails>
             </Accordion>
         </div>
     );
