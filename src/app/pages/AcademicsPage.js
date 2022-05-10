@@ -2,6 +2,10 @@ import React from 'react'
 import {Box, Grid, Typography} from "@mui/material";
 import ButtonBasic from "../components/ButtonBasic";
 import '../styles/AcademicPage.css';
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import '../pages/PathwayChecklistPage.js';
+
+
 
 
 /* @Adam Dev.
@@ -14,26 +18,7 @@ import '../styles/AcademicPage.css';
 const AcademicsPage = () => {
   return (
     <div className= "containerSplit">
-
-        {/* This is a fake Nav bar to be deleted - Adam */}
-
-        <header id="masthead" className="masthead">
-
-
-            <section className="logo">
-                <h1 className="site-title">Project ARC</h1>
-            </section>
-
-            <nav className="main-nav">
-                <ul className="nav-menu">
-                    <li className="nav-menu-item"><a href="#">Item 1</a></li>
-                    <li className="nav-menu-item"><a href="#">Item 2</a></li>
-                    <li className="nav-menu-item"><a href="#">Item 3</a></li>
-                </ul>
-            </nav>
-
-        </header>
-
+    <ResponsiveAppBar/>
         <div className = "firstHalf">
             <Typography variant="h2" component="h1" pt={10} px={10} >
                 Academics
@@ -52,7 +37,9 @@ const AcademicsPage = () => {
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Pathways" size="small" color="secondary" image = "/images/PCheckList.png" />
+
+                   
+                    <ButtonBasic title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
