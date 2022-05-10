@@ -3,6 +3,9 @@ import {Box, Grid, Typography} from "@mui/material";
 import ButtonBasic from "../components/ButtonBasic";
 import '../styles/AcademicPage.css';
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import '../pages/PathwayChecklistPage.js';
+
+
 
 /* @Adam Dev.
    Academics page update! USER Story 2.3 mixed with previous USER Story 1.3
@@ -33,7 +36,7 @@ const AcademicsPage = () => {
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Pathways" size="small" color="secondary" image = "/images/PCheckList.png"/>
+                    <ButtonBasic title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
