@@ -5,6 +5,7 @@ import AcademicsPage from "./app/pages/AcademicsPage";
 import ProfessionalPage from "./app/pages/ProfessionalPage";
 import FirstYearTipPage from "./app/pages/FirstYearTipPage";
 import SecYearTipPage from "./app/pages/SecYearTipPage";
+import PathwayChecklistPage from "./app/pages/PathwayChecklistPage";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Professional" element={<ProfessionalPage />}></Route>
           <Route path="/Academics/1stYearTip" element={FirstYearTipPage}></Route>
           <Route path="/Academics/2ndYearTip" element={SecYearTipPage}></Route>
+          <Route path="/PathwayChecklistPage" element={PathwayChecklistPage} ></Route>
         </Routes>
       </BrowserRouter>
     </div>

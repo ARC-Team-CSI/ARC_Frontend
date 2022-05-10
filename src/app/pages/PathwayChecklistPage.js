@@ -1,9 +1,14 @@
 import React from "react";
 
-const PathwayChecklist = () => {
+const PathwayChecklistPage = () => {
+
     return (
-        <p>PathwayChecklist</p>
-    )
+      <div>
+        <p>This is the pathway checklist page. Next is to add the sidebar.</p>
+      </div>
+    );
+
 }
 
-export default PathwayChecklist;
+export default PathwayChecklistPage;
+
