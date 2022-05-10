@@ -18,7 +18,7 @@ function App() {
           <Route path="/Professional" element={<ProfessionalPage />}></Route>
           <Route path="/Academics/1stYearTip" element={FirstYearTipPage}></Route>
           <Route path="/Academics/2ndYearTip" element={SecYearTipPage}></Route>
-          <Route path="/PathwayChecklistPage" element={PathwayChecklistPage} ></Route>
+          <Route path="/PathwayChecklistPage" element={<PathwayChecklistPage />} ></Route>
         </Routes>
       </BrowserRouter>
     </div>
