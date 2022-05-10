@@ -7,6 +7,7 @@ import '../pages/PathwayChecklistPage.js';
 
 
 
+
 /* @Adam Dev.
    Academics page update! USER Story 2.3 mixed with previous USER Story 1.3
    Changed the structure of the page to a grid format using materialUI.
@@ -32,10 +33,12 @@ const AcademicsPage = () => {
         <div className="secondHalf">
             <Grid container sx={{flexDirection: {xs: "column", md: "row"}, justifyContent: {xs: "center", md: "space-around"}, alignContent: {xs: "center", md: "space-around"}}}  >
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Flowchart" size="small" color="primary" link="/" image = "/images/FlowChart.png"/>
+                    <ButtonBasic title="FlowChart" size="small" color="primary" link="http://flowcharts-csi.vercel.app/" image = "/images/FlowChart.png"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
+
+                   
                     <ButtonBasic title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
                 </Grid>
 

@@ -4,12 +4,12 @@ import ResponsiveAppBar from "../components/ResponsiveAppBar";
 const PathwayChecklistPage = () => {
 
     return (
-      <div>
-          <ResponsiveAppBar/>
-        <p>This is the pathway checklist page. Next is to add the sidebar.</p>
-      </div>
-    );
 
+        
+        <p>PathwayChecklist</p>
+    )
+
+      
 }
 
 export default PathwayChecklistPage;
