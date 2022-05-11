@@ -4,6 +4,7 @@ import ButtonBasic from "../components/ButtonBasic";
 import '../styles/AcademicPage.css';
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import '../pages/PathwayChecklistPage.js';
+import "../pages/StudentTips.js"
 
 
 
@@ -43,7 +44,7 @@ const AcademicsPage = () => {
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Tips" size="small" color="success" image = "/images/StdTip.jpg"/>
+                    <ButtonBasic title="Tips" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
                 </Grid>
             </Grid>
 

@@ -6,7 +6,7 @@ import ProfessionalPage from "./app/pages/ProfessionalPage";
 import FirstYearTipPage from "./app/pages/FirstYearTipPage";
 import SecYearTipPage from "./app/pages/SecYearTipPage";
 import PathwayChecklistPage from "./app/pages/PathwayChecklistPage";
-
+import StudentTips from "./app/pages/StudentTips"
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
           <Route path="/Academics/1stYearTip" element={FirstYearTipPage}></Route>
           <Route path="/Academics/2ndYearTip" element={SecYearTipPage}></Route>
           <Route path="/PathwayChecklistPage" element={<PathwayChecklistPage />} ></Route>
+          <Route path="/StudentTips" element={<StudentTips/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
