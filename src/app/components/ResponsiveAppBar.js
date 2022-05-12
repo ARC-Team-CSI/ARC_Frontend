@@ -1,15 +1,11 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import { purple } from "@mui/material/colors";
-import { Container } from "react-bootstrap";
 
-
-
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 // import { View, Image, StyleSheet } from 'react-native';
 
 import logo from "../assests/logo.png";
@@ -37,7 +33,11 @@ function ResponsiveAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }} className="AppBar">
-      <AppBar position="fixed" color="primary" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
+
+      <AppBar position="static" color = "secondary">
+
+
+
         <Toolbar>
       
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
