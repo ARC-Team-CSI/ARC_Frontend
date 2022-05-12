@@ -3,6 +3,11 @@ import {Box, Grid, Typography} from "@mui/material";
 import ButtonBasic from "../components/ButtonBasic";
 import '../styles/AcademicPage.css';
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import '../pages/PathwayChecklistPage.js';
+import "../pages/StudentTips.js"
+
+
+
 
 /* @Adam Dev.
    Academics page update! USER Story 2.3 mixed with previous USER Story 1.3
@@ -29,15 +34,17 @@ const AcademicsPage = () => {
         <div className="secondHalf">
             <Grid container sx={{flexDirection: {xs: "column", md: "row"}, justifyContent: {xs: "center", md: "space-around"}, alignContent: {xs: "center", md: "space-around"}}}  >
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Flowchart" size="small" color="primary" link="/" image = "/images/FlowChart.png"/>
+                    <ButtonBasic title="FlowChart" size="small" color="primary" link="http://flowcharts-csi.vercel.app/" image = "/images/FlowChart.png"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Pathways" size="small" color="secondary" image = "/images/PCheckList.png"/>
+
+                   
+                    <ButtonBasic title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Tips" size="small" color="success" image = "/images/StdTip.jpg"/>
+                    <ButtonBasic title="Tips" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
                 </Grid>
             </Grid>
 

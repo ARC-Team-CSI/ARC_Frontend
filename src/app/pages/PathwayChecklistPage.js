@@ -1,9 +1,16 @@
 import React from "react";
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
-const PathwayChecklist = () => {
+const PathwayChecklistPage = () => {
+
     return (
+
+        
         <p>PathwayChecklist</p>
     )
+
+      
 }
 
-export default PathwayChecklist;
+export default PathwayChecklistPage;
+
