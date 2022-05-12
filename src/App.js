@@ -5,7 +5,8 @@ import AcademicsPage from "./app/pages/AcademicsPage";
 import ProfessionalPage from "./app/pages/ProfessionalPage";
 import FirstYearTipPage from "./app/pages/FirstYearTipPage";
 import SecYearTipPage from "./app/pages/SecYearTipPage";
-import Test from "./app/pages/Test";
+import PathwayChecklistPage from "./app/pages/PathwayChecklistPage";
+import StudentTips from "./app/pages/StudentTips"
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/Professional" element={<ProfessionalPage />}></Route>
           <Route path="/Academics/1stYearTip" element={FirstYearTipPage}></Route>
           <Route path="/Academics/2ndYearTip" element={SecYearTipPage}></Route>
-          <Route path="/Test" element={<Test />}></Route>
+          <Route path="/PathwayChecklistPage" element={<PathwayChecklistPage />} ></Route>
+          <Route path="/StudentTips" element={<StudentTips/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
