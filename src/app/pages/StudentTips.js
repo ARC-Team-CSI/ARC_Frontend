@@ -1,14 +1,13 @@
 import React from 'react'
 
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import TipsNavBar from "../components/TipsNavbar";
+import SideBarTest from "../components/SideBarTest";
+
 function StudentTips() {
   return (
     <>
         <ResponsiveAppBar/>
-        <TipsNavBar/>
-        
-
+        <SideBarTest/>
     </>
   )
 }

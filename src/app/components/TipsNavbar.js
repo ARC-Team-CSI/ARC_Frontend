@@ -16,9 +16,9 @@ function TipsNavBar() {
 
   
   return (
-    <Box sx={{ flexGrow: 1 }} className="AppBar">
-      <AppBar position="static" color = "">
-        <Toolbar>
+    <Box sx={{ flexGrow: 1, pt: 8 }} className="AppBar">
+        <AppBar position="static" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+            <Toolbar>
   
           <Typography variant="h6" component="div" textAlign="center" sx={{ flexGrow: 2 }}>
           <img

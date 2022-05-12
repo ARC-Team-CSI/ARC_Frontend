@@ -22,6 +22,7 @@ import Menu_icon from '../assests/menu_icon.png'
 import Avatar from '@mui/material/Avatar';
 import '../pages/Home';
 import { Link } from 'react-router-dom';
+import TipsNavBar from "./TipsNavbar";
 // import PopupState from '@mui/material/Popover'
 
 function ResponsiveAppBar() {
@@ -36,7 +37,7 @@ function ResponsiveAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }} className="AppBar">
-      <AppBar position="static" color="primary">
+      <AppBar position="fixed" color="primary" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
         <Toolbar>
       
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -96,7 +97,8 @@ function ResponsiveAppBar() {
       </Menu>
     
         </Toolbar>
-      </AppBar>
+        </AppBar>
+        <TipsNavBar/>
     </Box>
   );
 }

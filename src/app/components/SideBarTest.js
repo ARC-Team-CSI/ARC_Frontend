@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
-import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -50,9 +48,11 @@ function PermanentDrawerLeft() {
 
     const drawer = (
         <div>
-            <Toolbar>
+            <Toolbar sx={{
+                pt: 10,
+            }}>
             <Divider />
-                <Tabs  orientation="vertical" variant="scrollable" value={value} onChange={handleChange} aria-label="simple tabs example">
+                <Tabs  orientation="vertical" variant="scrollable" value={value} onChange={handleChange} aria-label="simple tabs">
                     <Tab label="Freshman" {...a11yProps(0)} />
                     <Tab label="Sophomore" {...a11yProps(1)} />
                     <Tab label="Junior" {...a11yProps(2)} />
@@ -62,33 +62,25 @@ function PermanentDrawerLeft() {
         </div>
     );
 
+    /*      Working on it?
+             <CssBaseline />
+            <ResponsiveAppBar/>
+            <TipsNavBar/>
+     */
 
     return (
+        <div>
+
         <Box sx={{ display: 'flex' }}>
-            <CssBaseline />
-            <AppBar
-                position="fixed"
-                sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
-            >
-                <Toolbar>
-                    <Typography variant="h6" noWrap component="div">
-                        Test Page Accordion
-                    </Typography>
-                </Toolbar>
-            </AppBar>
             <Drawer
                 sx={{
                     width: drawerWidth,
                     flexShrink: 0,
-                    '& .MuiDrawer-paper': {
-                        width: drawerWidth,
-                        boxSizing: 'border-box',
-                    },
+                    pt: 10,
                 }}
                 variant="permanent"
                 anchor="left"
             >
-                <Toolbar />
                 <Divider />
                 {drawer}
             </Drawer>
@@ -110,19 +102,9 @@ function PermanentDrawerLeft() {
                 <TabPanel value={value} index={3}>
                     <SimpleAccordion schoolYear = "senior"/>
                 </TabPanel>
-
-                { /* Working on Clicking Functionality. */
-                    /* <BrowserRouter>
-                    <Switch>
-                        <Route exact path="/" render={() => <div>Home Page</div>} />
-                        <Route path="/Inbox" render={() => <div> Page inbox</div>} />
-                        <Route path="/Starred" render={() => <div>Page starred</div>} />
-                    </Switch>
-                </BrowserRouter>*/}
-
-
             </Box>
         </Box>
+</div>
     );
 }
 
