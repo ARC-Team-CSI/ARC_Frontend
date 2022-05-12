@@ -98,7 +98,6 @@ function ResponsiveAppBar() {
     
         </Toolbar>
         </AppBar>
-        <TipsNavBar/>
     </Box>
   );
 }
