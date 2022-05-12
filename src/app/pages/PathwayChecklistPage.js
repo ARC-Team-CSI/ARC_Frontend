@@ -6,6 +6,7 @@ const PathwayChecklistPage = () => {
 
     
     return (
+
         <div>
         <><ResponsiveAppBar /><p>PathwayChecklist</p></>
         <VerticalTab />
@@ -13,6 +14,6 @@ const PathwayChecklistPage = () => {
         </div> 
     );
     
-}
+
 
 export default PathwayChecklistPage;

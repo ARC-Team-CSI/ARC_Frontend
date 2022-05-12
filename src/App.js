@@ -5,12 +5,15 @@ import AcademicsPage from "./app/pages/AcademicsPage";
 import ProfessionalPage from "./app/pages/ProfessionalPage";
 import FirstYearTipPage from "./app/pages/FirstYearTipPage";
 import SecYearTipPage from "./app/pages/SecYearTipPage";
-import PathwayChecklistPage from "./app/pages/PathwayChecklistPage";
 import StudentTips from "./app/pages/StudentTips"
+import PathwayChecklistPage from "./app/pages/PathwayChecklistPage";
+import {ThemeProvider} from "@mui/material";
+import theme from "./theme";
 
 function App() {
   return (
     <div className="App">
+      <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -22,6 +25,7 @@ function App() {
           <Route path="/StudentTips" element={<StudentTips/>}></Route>
         </Routes>
       </BrowserRouter>
+      </ThemeProvider>
     </div>
   );
 }
