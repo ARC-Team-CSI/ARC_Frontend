@@ -62,11 +62,6 @@ function PermanentDrawerLeft() {
         </div>
     );
 
-    /*      Working on it?
-             <CssBaseline />
-            <ResponsiveAppBar/>
-            <TipsNavBar/>
-     */
 
     return (
         <div>
