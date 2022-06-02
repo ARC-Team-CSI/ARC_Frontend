@@ -12,18 +12,12 @@ const drawerWidth = 240;
 
 
 function TabPanel(props) {
-    const { children, value, index, ...other } = props;
+    const { children, value, index} = props;
 
     return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
+        <div>
             {value === index && (
-                <Box p={3}>
+                <Box p={3} color="primary">
                     <Typography>{children}</Typography>
                 </Box>
             )}
@@ -85,13 +79,13 @@ function PermanentDrawerLeft() {
                 {drawer}
             </Drawer>
             <Box
-                component="main"
                 sx={{ flexGrow: 1 }}
             >
                 <Toolbar />
 
+                <div>
                 <TabPanel value={value} index={0}>
-                <SimpleAccordion schoolYear = "freshman"/>
+                    <SimpleAccordion schoolYear = "freshman"/>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     <SimpleAccordion schoolYear = "sophomore"/>
@@ -102,6 +96,7 @@ function PermanentDrawerLeft() {
                 <TabPanel value={value} index={3}>
                     <SimpleAccordion schoolYear = "senior"/>
                 </TabPanel>
+                </div>
             </Box>
         </Box>
 </div>

@@ -18,7 +18,7 @@ function SimpleAccordion(schoolYear) {
 
     return (
         <div>
-            <Accordion>
+            <Accordion color="primary">
                 <AccordionSummary
                     aria-controls="panel1a-content"
                     id="panel1a-header"

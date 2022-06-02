@@ -4,11 +4,6 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import { purple } from "@mui/material/colors";
-import { Container } from "react-bootstrap";
-
-
 
 // import { View, Image, StyleSheet } from 'react-native';
 
@@ -21,8 +16,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu_icon from '../assests/menu_icon.png'
 import Avatar from '@mui/material/Avatar';
 import '../pages/Home';
-import { Link } from 'react-router-dom';
-import TipsNavBar from "./TipsNavbar";
+import { Link, useMatch } from 'react-router-dom';
 // import PopupState from '@mui/material/Popover'
 
 function ResponsiveAppBar() {
@@ -34,6 +28,9 @@ function ResponsiveAppBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const tipsPage = useMatch("/StudentTips");
+
 
   return (
     <Box sx={{ flexGrow: 1 }} className="AppBar">
@@ -55,6 +52,15 @@ function ResponsiveAppBar() {
               width="110px"
             />
           </Typography>
+
+            {/*Added In Center Image If route matches center*/}
+
+            {tipsPage &&
+                <Typography variant="h6" component="div" textAlign="center" sx={{ flexGrow: 2}}>
+                    <img alt="icon" src={tips} height= "30px" width= "30px" />
+                    StudentTips
+                </Typography>
+            }
 
           <Typography
             variant="h6"
