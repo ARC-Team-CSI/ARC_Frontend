@@ -1,34 +1,33 @@
-.ititle {
+.rtitle {
     position: absolute;
     width: 132px;
     height: 84px;
     left: 1498px;
     top: 712px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
-    color: #000000;
+    color:  #000000;
     }
     
-    .internshiphb{
+    .resume{
     position: absolute;
     width: 381px;
     height: 187px;
-    left: 1006px;
+    left: 1462px;
     top: 663px;
     background: #0072B1;
     border-radius: 20px;
     }
     
-    .iarrow2 {
+    .rarrow2 {
     position: absolute;
     width: 87.05px;
-    height: 0px;
+    height: 0;
     left: 1718px;
     top: 800px;
     border: 3px solid #140101;
     box-sizing: border-box;
     }
-
