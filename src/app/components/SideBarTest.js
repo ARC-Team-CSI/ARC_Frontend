@@ -7,6 +7,7 @@ import Divider from '@mui/material/Divider';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import SimpleAccordion from "./Accordion";
+import {Image} from "react-bootstrap";
 
 const drawerWidth = 240;
 
@@ -47,10 +48,11 @@ function PermanentDrawerLeft() {
             }}>
             <Divider />
                 <Tabs  orientation="vertical" variant="scrollable" value={value} onChange={handleChange} aria-label="simple tabs">
-                    <Tab label="Freshman" {...a11yProps(0)} />
-                    <Tab label="Sophomore" {...a11yProps(1)} />
-                    <Tab label="Junior" {...a11yProps(2)} />
-                    <Tab label="Senior" {...a11yProps(3)} />
+                    <Tab label="Welcome!" {...a11yProps(0)} />
+                    <Tab label="Freshman" {...a11yProps(1)} />
+                    <Tab label="Sophomore" {...a11yProps(2)} />
+                    <Tab label="Junior" {...a11yProps(3)} />
+                    <Tab label="Senior" {...a11yProps(4)} />
                 </Tabs>
             </Toolbar>
         </div>
@@ -84,16 +86,24 @@ function PermanentDrawerLeft() {
                 <Toolbar />
 
                 <div>
-                <TabPanel value={value} index={0}>
+                    <TabPanel value={value} index={0}>
+                    <Typography variant="h1" component="h2" > Welcome to our student tips page! </Typography>
+                        <Typography variant="h4" component="h4" > This is just a test welcome page </Typography>
+                        <Typography variant="h5" component="h5" > Click side bars for info on student tips. </Typography>
+                        <div>
+                            <img src="https://i.ytimg.com/vi/syohkUounhg/maxresdefault.jpg" alt="hi!"/>
+                        </div>
+                    </TabPanel>
+                <TabPanel value={value} index={1}>
                     <SimpleAccordion schoolYear = "freshman"/>
                 </TabPanel>
-                <TabPanel value={value} index={1}>
+                <TabPanel value={value} index={2}>
                     <SimpleAccordion schoolYear = "sophomore"/>
                 </TabPanel>
-                <TabPanel value={value} index={2}>
+                <TabPanel value={value} index={3}>
                     <SimpleAccordion schoolYear = "junior"/>
                 </TabPanel>
-                <TabPanel value={value} index={3}>
+                <TabPanel value={value} index={4}>
                     <SimpleAccordion schoolYear = "senior"/>
                 </TabPanel>
                 </div>

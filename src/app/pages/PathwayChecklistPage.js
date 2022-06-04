@@ -7,9 +7,9 @@ function PathwayChecklistPage() {
     return (
 
         <div>
-            <><ResponsiveAppBar/><p>PathwayChecklist</p></>
-            <VerticalTab/>
-
+                <ResponsiveAppBar/>
+                <p>PathwayChecklist</p>
+                <VerticalTab/>
         </div>
     );
 

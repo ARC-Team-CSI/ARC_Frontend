@@ -5,7 +5,6 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 
 
-
 function SimpleAccordion(schoolYear) {
     const name = {...schoolYear};
 
@@ -18,7 +17,7 @@ function SimpleAccordion(schoolYear) {
 
     return (
         <div>
-            <Accordion color="primary">
+            <Accordion>
                 <AccordionSummary
                     aria-controls="panel1a-content"
                     id="panel1a-header"
