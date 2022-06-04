@@ -1,6 +1,6 @@
 import React from "react";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import VerticalTab from "../components/VerticalTab";
+import SideBarChecklist from "../components/SideBarChecklist";
 
 function PathwayChecklistPage() {
 
@@ -9,7 +9,7 @@ function PathwayChecklistPage() {
         <div>
                 <ResponsiveAppBar/>
                 <p>PathwayChecklist</p>
-                <VerticalTab/>
+                <SideBarChecklist/>
         </div>
     );
 

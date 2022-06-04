@@ -11,6 +11,7 @@ import logo from "../assests/logo.png";
 import ARC from "../assests/ARC.png";
 import csilogo from "../assests/csilogo.png";
 import tips from "../assests/lightbulb.png";
+import check from "../assests/checklist.png";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Menu_icon from '../assests/menu_icon.png'
@@ -30,6 +31,7 @@ function ResponsiveAppBar() {
   };
 
   const tipsPage = useMatch("/StudentTips");
+  const checkListPage = useMatch("/PathwayChecklistPage");
 
 
   return (
@@ -61,6 +63,14 @@ function ResponsiveAppBar() {
                     StudentTips
                 </Typography>
             }
+
+          {checkListPage &&
+              <Typography variant="h6" component="div" textAlign="center" sx={{ flexGrow: 2}}>
+                <img alt="icon" src={check} height= "35px" width= "35px" />
+                  Pathway CheckList
+              </Typography>
+          }
+
 
           <Typography
             variant="h6"
