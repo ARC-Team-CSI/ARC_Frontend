@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import SideBarTest from "../components/SideBarTest";
+import SideBarTest from "../components/SideBarTips";
 import '../styles/StudentTips.css';
 
 

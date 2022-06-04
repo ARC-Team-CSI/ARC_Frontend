@@ -7,7 +7,6 @@ import Divider from '@mui/material/Divider';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import SimpleAccordion from "./Accordion";
-import {Image} from "react-bootstrap";
 
 const drawerWidth = 240;
 
@@ -57,12 +56,6 @@ function PermanentDrawerLeft() {
             </Toolbar>
         </div>
     );
-
-    /*      Working on it?
-             <CssBaseline />
-            <ResponsiveAppBar/>
-            <TipsNavBar/>
-     */
 
     return (
         <div>

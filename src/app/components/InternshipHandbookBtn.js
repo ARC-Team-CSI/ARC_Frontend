@@ -1,5 +1,5 @@
 import React from 'react'
-import './InternshipHandbookBtn.css'
+import '../styles/InternshipHandbookBtn.css'
  
 function InternshipHandbookBtn(){
  

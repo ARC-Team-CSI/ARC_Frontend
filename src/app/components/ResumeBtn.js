@@ -1,5 +1,5 @@
 import React from 'react'
-import './ResumeBtn.css'
+import '../styles/ResumeBtn.css'
 
 function ResumeBtn(){
 

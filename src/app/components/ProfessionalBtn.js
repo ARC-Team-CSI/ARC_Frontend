@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './ProfessionalBtn.css'
+import '../styles/ProfessionalBtn.css'
 
 function ProfessionalBtn(){
 

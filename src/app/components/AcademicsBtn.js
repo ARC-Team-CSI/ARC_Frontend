@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './AcademicsBtn.css'
+import '../styles/AcademicsBtn.css'
 function AcademicsBtn(){
 
   return (

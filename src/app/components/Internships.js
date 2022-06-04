@@ -1,6 +1,5 @@
 import React from 'react'
-import './Internships.css'
-import Button from 'react-bootstrap/Button';
+import '../styles/Internships.css'
 import Card from 'react-bootstrap/Card';
 
 function InternshipsBtn(){

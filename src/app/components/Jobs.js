@@ -1,5 +1,5 @@
 import React from 'react'
-import './Jobs.css'
+import '../styles/Jobs.css'
 
 function Events(){
 
