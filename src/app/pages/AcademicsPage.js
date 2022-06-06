@@ -38,7 +38,6 @@ const AcademicsPage = () => {
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-
                    
                     <ButtonBasic title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
                 </Grid>
