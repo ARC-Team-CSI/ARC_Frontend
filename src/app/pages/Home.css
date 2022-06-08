@@ -3,3 +3,12 @@
     box-shadow: inset 81.5207px -81.5207px 115.288px rgba(23, 53, 84, 0.5),
       inset -81.5207px 81.5207px 115.288px rgba(71, 162, 254, 0.5);
 }
+
+.grid {
+    height: 100vh;
+    width: 100vh;
+}
+
+.bgImage {
+    background-image: url("https://csidolphins.com/images/logos/site/site.png");
+}
