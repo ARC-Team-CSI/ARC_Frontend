@@ -1,6 +1,6 @@
 import React from 'react'
 import AcademicsBtn from '../components/AcademicsBtn'
-import ProfessionalBtn from '../components/ProfessionalBtn'
+import CareerBtn from '../components/CareerBtn'
 import './Home.css'
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
@@ -9,7 +9,7 @@ function Home() {
     <>
         <ResponsiveAppBar/>
       <div><AcademicsBtn /></div>
-    <div><ProfessionalBtn /></div>
+    <div><CareerBtn /></div>
     </>
   )
 }

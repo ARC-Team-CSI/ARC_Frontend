@@ -14,6 +14,6 @@ const PathwayChecklistPage = () => {
         </div> 
     );
     
-
+    }
 
 export default PathwayChecklistPage;
