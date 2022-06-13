@@ -1,19 +1,19 @@
 import React from "react";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import VerticalTab from "../components/VerticalTab";
+import SideBarTips from "../components/SideBarTips";
 
 const PathwayChecklistPage = () => {
 
-    
+
     return (
 
         <div>
         <><ResponsiveAppBar /><p>PathwayChecklist</p></>
-        <VerticalTab />
-            
-        </div> 
+        <SideBarTips />
+
+        </div>
     );
-    
+
     }
 
 export default PathwayChecklistPage;
