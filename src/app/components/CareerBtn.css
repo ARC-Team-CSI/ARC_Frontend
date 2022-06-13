@@ -1,0 +1,27 @@
+.career {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 23%;
+    width: 50%;
+    background-color:  #8A9BBC;
+    border: none;
+  }
+
+.careertitle {
+    position: absolute;
+    left: 10%;
+    right: 74.68%;
+    bottom: 50%;
+    font-size: 2vw;
+    color: black;
+  }
+
+.careerdescription {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    font-size: 1vw;
+    color: black;
+  }
+
