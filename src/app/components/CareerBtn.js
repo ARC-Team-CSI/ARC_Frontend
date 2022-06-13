@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './CareerBtn.css'
+import '../styles/CareerBtn.css'
 
 function CareerBtn(){
 
@@ -9,9 +9,9 @@ function CareerBtn(){
         <Link to='/Career'>
         <button
         className='career'>
-            <a className='careertitle'>Career</a>
+            <p className='careertitle'>Career</p>
             <br/>
-            <a className='cdescription'>Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be </a>
+            <p className='careerdescription'>Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be </p>
         </button>
         </Link>
     </div>

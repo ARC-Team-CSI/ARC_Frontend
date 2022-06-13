@@ -7,9 +7,9 @@ function AcademicsBtn(){
     <div>
         <Link to="/Academics">
         <button className='academics'>
-            <a className='title'>Academics</a>
+            <p className='title'>Academics</p>
             <br/>
-            <a className='description'>Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be </a>
+            <p className='description'>Ea repellendus natus sed dolorem quam sed quia recusandae ut nemo voluptatem et be </p>
         </button>
         </Link>
     </div>

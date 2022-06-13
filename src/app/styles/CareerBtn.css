@@ -13,15 +13,20 @@
     left: 10%;
     right: 74.68%;
     bottom: 50%;
+    font-family: Roboto, serif;
     font-size: 2vw;
-    color: black;
+    color: white;
   }
 
 .careerdescription {
     position: absolute;
     left: 10%;
     bottom: 30%;
+    font-family: Roboto, serif;
     font-size: 1vw;
-    color: black;
+    color: white;
   }
+
+
+
 
