@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import {Button, Card,  CardActions, CardMedia, Grid} from '@mui/material';
+import {Button, Card, CardActions, CardMedia, Grid} from '@mui/material';
+import { Link } from "react-router-dom";
 
 /*
         @Adam Dev 4.27.2022
@@ -9,7 +10,7 @@ import {Button, Card,  CardActions, CardMedia, Grid} from '@mui/material';
  */
 
 
-function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
+function ButtonRouter({title, size, color, bgColor, link, image, alt}) {
     const style = {
         backgroundColor: bgColor,
         height: '20%',
@@ -19,13 +20,13 @@ function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
 
     return (
         <>
-                <Grid item sm={12} style={style}>
-            <Card sx={{minWidth: "250px",
-                       '&:hover': { boxShadow: "-1px 10px 29px 0px  rgba(0,0,0,0.8)",
-                                    transform: "scale(1.03)",
-                                    transition: "all ease 200ms",
-                       },
-            }}  >
+            <Grid item sm={12} style={style}>
+                <Card sx={{minWidth: "250px",
+                    '&:hover': { boxShadow: "-1px 10px 29px 0px  rgba(0,0,0,0.8)",
+                        transform: "scale(1.03)",
+                        transition: "all ease 200ms",
+                    },
+                }}  >
                     <CardMedia
                         component= "img"
                         height="140"
@@ -35,14 +36,16 @@ function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
                                 filter: "grayscale(100%)",
                             }}}
                     />
-                <CardActions>
-                    <Button variant={"outlined"} href= {link} size= {size} color = {color}>
-                        <h5> {title} </h5>
-                    </Button>
-                </CardActions>
+                    <CardActions>
+                        <Link to = {link} style={{ textDecoration: 'none' }}>
+                            <Button variant={"outlined"} size= {size} color = {color}>
+                                <h5> {title} </h5>
+                            </Button>
+                        </Link>
+                    </CardActions>
 
-            </Card>
-                </Grid>
+                </Card>
+            </Grid>
         </>
     );
 }
@@ -57,7 +60,7 @@ function ButtonBasic({title, size, color, bgColor, link, image, alt}) {
 *  alt: adds details for accesibility.
 * */
 
-ButtonBasic.propTypes = {
+ButtonRouter.propTypes = {
     title: PropTypes.string,
     color: PropTypes.string,
     bgColor: PropTypes.string,
@@ -67,7 +70,7 @@ ButtonBasic.propTypes = {
     image: PropTypes.string
 }
 
-ButtonBasic.defaultProps = {
+ButtonRouter.defaultProps = {
     title: "Test Button",
     color: "primary",
     size: "medium" ,
@@ -79,4 +82,4 @@ ButtonBasic.defaultProps = {
 }
 
 
-export default ButtonBasic;
+export default ButtonRouter;

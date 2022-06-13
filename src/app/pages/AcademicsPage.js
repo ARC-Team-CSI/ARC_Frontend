@@ -5,6 +5,7 @@ import '../styles/AcademicPage.css';
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import '../pages/PathwayChecklistPage.js';
 import "../pages/StudentTips.js"
+import ButtonRouter from "../components/ButtonRouter";
 
 
 
@@ -38,12 +39,12 @@ const AcademicsPage = () => {
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                   
-                    <ButtonBasic title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
+
+                    <ButtonRouter title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Tips" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
+                    <ButtonRouter title="Tips" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
                 </Grid>
             </Grid>
 

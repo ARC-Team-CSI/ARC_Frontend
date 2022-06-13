@@ -16,8 +16,6 @@ const CareerPage = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, atque deserunt, dolore impedit ipsum molestiae officia perspiciatis quasi quisquam rerum totam voluptatem! Aperiam deleniti labore magnam, maiores minus odio placeat.
             </Typography>
             </Box>
-
-
         </div>
   </div>
 
