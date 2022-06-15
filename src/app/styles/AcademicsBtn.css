@@ -4,15 +4,16 @@
   bottom: 0;
   height: 23%;
   width: 50%;
-  background-color: rgba(27, 69, 120, 0.3);
+  background-color: #3984b7;
   border: none;
 }
+
 .title {
   position: absolute;
   left: 10%;
   right: 74.68%;
   bottom: 50%;
-  font-family: Roboto;
+  font-family: Roboto, serif;
   font-size: 2vw;
   color: white;
 }
@@ -21,7 +22,7 @@
   position: absolute;
   left: 10%;
   bottom: 30%;
-  font-family: Roboto;
+  font-family: Roboto, serif;
   font-size: 1vw;
   color: white;
 }

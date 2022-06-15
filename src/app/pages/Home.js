@@ -1,11 +1,11 @@
 import React from 'react'
 import AcademicsBtn from '../components/AcademicsBtn'
-import ProfessionalBtn from '../components/ProfessionalBtn'
 import './Home.css'
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import {Box} from "@material-ui/core";
 import {Grid} from "@mui/material";
 import logo from "../assests/logo.png"
+import CareerBtn from "../components/CareerBtn";
 
 function Home() {
   return (
@@ -47,8 +47,7 @@ function Home() {
         </Grid>
 
         <div><AcademicsBtn /></div>
-        <div><ProfessionalBtn /></div>
-
+        <div><CareerBtn /></div>
     </>
   )
 }
