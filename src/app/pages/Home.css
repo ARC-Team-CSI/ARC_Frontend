@@ -7,8 +7,56 @@
 .grid {
     height: 100vh;
     width: 100vh;
+    background-size: cover;
+    background: url("../../../public/images/homebg.jpg") no-repeat;
 }
 
-.bgImage {
-    background-image: url("https://csidolphins.com/images/logos/site/site.png");
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.Header h1 {
+    text-align:center; font-size:40px; text-transform:uppercase;
+    color:#FFF; letter-spacing:1px;
+    filter: drop-shadow(0px 0px 3px black);
+    font-family:"Roboto", serif; font-weight: bold;
+    padding-top: 125px;
+}
+.Header h1 span {
+    margin-top: 20px;
+    font-size:15px; color:#FFFFFF; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Roboto Light", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.Header h1 span:after,.Header h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:#f8f8f8;
 }

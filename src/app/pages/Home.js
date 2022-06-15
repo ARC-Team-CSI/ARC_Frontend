@@ -22,17 +22,24 @@ function Home() {
             <Grid item className="bgImage">
 
                 <Box sx={{
-                    width: "40rem",
-                    height: "40vh",
+                    width: "50rem",
+                    height: "25rem",
                     backgroundColor: '#7FC0E6',
-                    paddingBottom: 10,
+                    filter: "drop-shadow(30px 10px 50px #FFF)",
+                    marginBottom: 25,
                     flexDirection: "row",
                     borderRadius: "30px",
                     backgroundImage: `url(${logo})`,
                     backgroundSize: "contain",
+                    backgroundPosition: "center",
                     backgroundRepeat: "no-repeat"
                 }}
                 >
+                    <div className="Header">
+                    <h1> Welcome to the ARC Project
+                        <span>Click Links Below</span>
+                     </h1>
+                    </div>
                 </Box>
 
             </Grid>
