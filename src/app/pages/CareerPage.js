@@ -2,6 +2,9 @@ import React from 'react'
 import {Box, Button, Grid, Typography} from "@mui/material";
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import '../styles/CareerPage.css';
+import ButtonBasic from "../components/ButtonBasic";
+import ButtonRouter from "../components/ButtonRouter";
+import Footer from "../components/Footer";
 
 
 const CareerPage = () => {
@@ -21,14 +24,29 @@ const CareerPage = () => {
 
             <Grid container flexDirection="row" justifyContent="flex-end" marginY={25} justifySelf="self-end">
                 <Grid item xs={2}>
-                    <Button variant="contained" style={{maxWidth: '130px', maxHeight: '80px', minWidth: '130px', minHeight: '80px'}}> Resume </Button>
+                    <Button variant="contained" style={{maxWidth: '200px', maxHeight: '100px', minWidth: '200px', minHeight: '100px'}}> Resume </Button>
                 </Grid>
                 <Grid item xs={4}>
-                    <Button variant="contained"  style={{maxWidth: '130px', maxHeight: '80px', minWidth: '130px', minHeight: '80px'}}> Career/Degree </Button>
+                    <Button variant="contained"  style={{maxWidth: '200px', maxHeight: '100px', minWidth: '200px', minHeight: '100px'}}> Career/Degree </Button>
                 </Grid>
             </Grid>
 
+            <Grid py={0} container sx={{flexDirection: {xs: "column", md: "row"}, justifyContent: {xs: "center", md: "space-around"}, alignContent: {xs: "center", md: "space-around"}}}  >
+                <Grid item xs={3} mt={5}>
+                    <ButtonBasic title="FlowChart" size="small" color="primary" link="http://flowcharts-csi.vercel.app/" image = "/images/FlowChart.png"/>
+                </Grid>
 
+                <Grid item xs={3} mt={5}>
+
+                    <ButtonRouter title="Pathways" size="small" color="secondary" link="/PathwayChecklistPage" image = "/images/PCheckList.png"/>
+                </Grid>
+
+                <Grid item xs={3} mt={5}>
+                    <ButtonRouter title="Tips" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
+                </Grid>
+            </Grid>
+
+            <Footer/>
         </div>
     </Grid>
 
