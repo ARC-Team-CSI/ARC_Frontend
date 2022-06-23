@@ -9,6 +9,8 @@ import StudentTips from "./app/pages/StudentTips"
 import PathwayChecklistPage from "./app/pages/PathwayChecklistPage";
 import {ThemeProvider} from "@mui/material";
 import theme from "./theme";
+import Resume from "./app/pages/Resume";
+import Degree from "./app/pages/Degree";
 
 function App() {
   return (
@@ -16,13 +18,15 @@ function App() {
       <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Academics" element={<AcademicsPage />}></Route>
-          <Route path="/Career" element={<CareerPage />}></Route>
-          <Route path="/Academics/1stYearTip" element={FirstYearTipPage}></Route>
-          <Route path="/Academics/2ndYearTip" element={SecYearTipPage}></Route>
-          <Route path="/PathwayChecklistPage" element={<PathwayChecklistPage />} ></Route>
-          <Route path="/StudentTips" element={<StudentTips/>}></Route>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/Academics" element={<AcademicsPage />}></Route>
+            <Route path="/Career" element={<CareerPage />}></Route>
+            <Route path="/Academics/1stYearTip" element={FirstYearTipPage}></Route>
+            <Route path="/Academics/2ndYearTip" element={SecYearTipPage}></Route>
+            <Route path="/PathwayChecklistPage" element={<PathwayChecklistPage />} ></Route>
+            <Route path="/StudentTips" element={<StudentTips/>}></Route>
+            <Route path="/Resume" element={<Resume/>}></Route>
+            <Route path="/Degree" element={<Degree/>}></Route>
         </Routes>
       </BrowserRouter>
       </ThemeProvider>

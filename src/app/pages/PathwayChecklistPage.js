@@ -6,11 +6,9 @@ const PathwayChecklistPage = () => {
 
 
     return (
-
         <div>
         <><ResponsiveAppBar /><p>PathwayChecklist</p></>
         <SideBarTips />
-
         </div>
     );
 
