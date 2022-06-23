@@ -37,11 +37,11 @@ const CareerPage = () => {
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="GitBook" size="small" color="primary" link="https://enterprise.theforage.com/landing/CUNY%20College%20of%20Staten%20Island/W2hMDdhcqPytgs3Nk/CUNY%20CSI%20Computer%20Science" image = "/images/FlowChart.png"/>
+                    <ButtonBasic title="GitBook" size="small" color="primary" link="https://andreahabib.github.io/RSS_Menu/" image = "/images/FlowChart.png"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonRouter title="Tips" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
+                    <ButtonRouter title="Cs Events" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
                 </Grid>
             </Grid>
 
