@@ -32,13 +32,15 @@ function ResponsiveAppBar() {
 
   const tipsPage = useMatch("/StudentTips");
   const checkListPage = useMatch("/PathwayChecklistPage");
+  const degreePage = useMatch("/Degree");
+  const resumePage = useMatch("/Resume");
 
 
   return (
     <Box sx={{ flexGrow: 1 }} className="AppBar">
       <AppBar position="fixed" color="primary" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
         <Toolbar>
-      
+
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {/* <Image
         style={styles.tinyLogo}
@@ -55,7 +57,10 @@ function ResponsiveAppBar() {
             />
           </Typography>
 
-            {/*Added In Center Image If route matches center*/}
+            {/** @Adam.Dev
+              To added in a title at top of nav bar, copy one of the sections below and import a new router link at top of page.
+              Format is const pageName = useMatch("/RouterLink);
+              */}
 
             {tipsPage &&
                 <Typography variant="h6" component="div" textAlign="center" sx={{ flexGrow: 2}}>
@@ -71,6 +76,19 @@ function ResponsiveAppBar() {
               </Typography>
           }
 
+          {degreePage &&
+              <Typography variant="h6" component="div" textAlign="center" sx={{ flexGrow: 2}}>
+                <img alt="icon" src={tips} height= "30px" width= "30px" />
+                Career / Degree
+              </Typography>
+          }
+
+          {resumePage &&
+              <Typography variant="h6" component="div" textAlign="center" sx={{ flexGrow: 2}}>
+                <img alt="icon" src={tips} height= "30px" width= "30px" />
+                Resume
+              </Typography>
+          }
 
           <Typography
             variant="h6"
@@ -95,9 +113,9 @@ function ResponsiveAppBar() {
         startIcon={<Avatar src={Menu_icon} />}
 
       >
-  
+
       </Button>
-     
+
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
@@ -108,10 +126,11 @@ function ResponsiveAppBar() {
         }}
       >
         <MenuItem component ={Link} to= "/">Home</MenuItem>
-        <MenuItem onClick={handleClose}>Career</MenuItem>
-        
+        <MenuItem component={Link} to = "/Academics"> Academics</MenuItem>
+        <MenuItem component={Link} to = "/Career"> Career</MenuItem>
+
       </Menu>
-    
+
         </Toolbar>
         </AppBar>
     </Box>

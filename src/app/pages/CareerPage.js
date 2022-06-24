@@ -3,7 +3,6 @@ import {Box, Button, Grid, Typography} from "@mui/material";
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import '../styles/CareerPage.css';
 import ButtonBasic from "../components/ButtonBasic";
-import ButtonRouter from "../components/ButtonRouter";
 import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
 
@@ -22,7 +21,7 @@ const CareerPage = () => {
             </Typography>
             </Box>
 
-            <Grid container flexDirection="row" justifyContent="flex-end" marginY={25} justifySelf="self-end">
+            <Grid container flexDirection="row" justifyContent="flex-end" marginY={25} justifySelf="self-end" height={0}>
                 <Grid item xs={2}>
                     <Button variant="contained"  component={Link} to="/Resume" style={{maxWidth: '200px', maxHeight: '100px', minWidth: '200px', minHeight: '100px'}}> Resume </Button>
                 </Grid>
@@ -33,15 +32,15 @@ const CareerPage = () => {
 
             <Grid py={0} container sx={{flexDirection: {xs: "column", md: "row"}, justifyContent: {xs: "center", md: "space-around"}, alignContent: {xs: "center", md: "space-around"}}}  >
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="Internships/Job" size="small" color="primary" link="https://csi-cs-department.gitbook.io/internship-handbook/" image = "/images/FlowChart.png"/>
+                    <ButtonBasic title="Internships/Job" size="small" color="primary" link="https://csi-cs-department.gitbook.io/internship-handbook/" image = "/images/CSevent.jpg"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonBasic title="GitBook" size="small" color="primary" link="https://andreahabib.github.io/RSS_Menu/" image = "/images/FlowChart.png"/>
+                    <ButtonBasic title="GitBook" size="small" color="primary" link="https://andreahabib.github.io/RSS_Menu/" image = "/images/Gitbook.jpg"/>
                 </Grid>
 
                 <Grid item xs={3} mt={5}>
-                    <ButtonRouter title="Cs Events" size="small" color="success" image = "/images/StdTip.jpg" link= "/StudentTips"/>
+                    <ButtonBasic title="Cs Events" size="small" color="success" image = "/images/JobIntern.jpg" link= "https://andreahabib.github.io/RSS_Menu/"/>
                 </Grid>
             </Grid>
 
