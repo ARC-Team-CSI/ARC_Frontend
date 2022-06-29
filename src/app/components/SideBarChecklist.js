@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import SimpleAccordion from "./Accordion";
 
 const drawerWidth = 240;
 
