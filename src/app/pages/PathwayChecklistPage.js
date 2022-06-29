@@ -1,6 +1,6 @@
 import React from "react";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import SideBarTips from "../components/SideBarTips";
+import SideBarChecklist from "../components/SideBarChecklist";
 
 const PathwayChecklistPage = () => {
 
@@ -8,7 +8,7 @@ const PathwayChecklistPage = () => {
     return (
         <div>
         <><ResponsiveAppBar /><p>PathwayChecklist</p></>
-        <SideBarTips />
+        <SideBarChecklist/>
         </div>
     );
 
