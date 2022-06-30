@@ -2,7 +2,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 
-    
+
 }
 
 
@@ -16,9 +16,34 @@ body {
    */
 }
 
+#background{
+  position:absolute;
+  z-index:0;
+  background:white;
+  display:block;
+  min-height:50%;
+  min-width:50%;
+  color:yellow;
+}
 
+.float{
+  position:fixed;
+  width: 70px;
+  height: 70px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
-
+.my-float{
+  margin-top:16px;
+}
 .AppBar {
 background: #e0e0e0;
 }

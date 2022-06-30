@@ -15,9 +15,12 @@ import Degree from "./app/pages/Degree";
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Routes>
+        <a className="float" target="_blank">
+            <i className="fa fa-whatsapp my-float"> Test Site</i>
+        </a>
+        <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/Academics" element={<AcademicsPage />}></Route>
             <Route path="/Career" element={<CareerPage />}></Route>
@@ -27,7 +30,8 @@ function App() {
             <Route path="/StudentTips" element={<StudentTips/>}></Route>
             <Route path="/Resume" element={<Resume/>}></Route>
             <Route path="/Degree" element={<Degree/>}></Route>
-        </Routes>
+          </Routes>
+
       </BrowserRouter>
       </ThemeProvider>
     </div>
