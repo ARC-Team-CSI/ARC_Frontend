@@ -2,7 +2,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 
-    
+
 }
 
 
@@ -21,4 +21,10 @@ body {
 
 .AppBar {
 background: #e0e0e0;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }

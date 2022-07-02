@@ -16,7 +16,7 @@ function SimpleAccordion(schoolYear) {
     }
 
     return (
-        <div>
+        <>
             <Accordion>
                 <AccordionSummary
                     aria-controls="panel1a-content"
@@ -54,7 +54,7 @@ function SimpleAccordion(schoolYear) {
                     {years[name.schoolYear][2]}
                 </AccordionDetails>
             </Accordion>
-        </div>
+        </>
     );
 }
 

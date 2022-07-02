@@ -88,23 +88,23 @@ function SideBarChecklist() {
 
               <TabPanel value={value} index={1}>
 
-                <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="100%" height="750px">
-                  <p>Alternative text - include a link <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">to the PDF!</a></p>
+                <object data="/CSC_BS_Pathways_checklist_2021-22-major-catalog.pdf" type="application/pdf" width="100%" height="750px">
+                  <p>Alternative text - include a link <a href="/CSC_BS_Pathways_checklist_2021-22-major-catalog.pdf">to the PDF!</a></p>
                 </object>
 
               </TabPanel>
 
               <TabPanel value={value} index={2}>
 
-                <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="100%" height="750px">
-                  <p>Alternative text - include a link <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">to the PDF!</a></p>
+                <object data="/2018-21CSC_BS_Pathways_checklist_2018-21_major_catalog.pdf" type="application/pdf" width="100%" height="750px">
+                  <p>Alternative text - include a link <a href="/2018-21CSC_BS_Pathways_checklist_2018-21_major_catalog.pdf">to the PDF!</a></p>
                 </object>
 
               </TabPanel>
               <TabPanel value={value} index={3}>
 
-                <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="100%" height="750px">
-                  <p>Alternative text - include a link <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">to the PDF!</a></p>
+                <object data="/CSC_BS_Pathways_checklist_2013-18_major_catalog.pdf" type="application/pdf" width="100%" height="750px">
+                  <p>Alternative text - include a link <a href="/CSC_BS_Pathways_checklist_2013-18_major_catalog.pdf">to the PDF!</a></p>
                 </object>
 
               </TabPanel>

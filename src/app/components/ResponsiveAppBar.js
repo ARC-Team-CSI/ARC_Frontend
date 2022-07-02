@@ -37,17 +37,11 @@ function ResponsiveAppBar() {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }} className="AppBar">
-      <AppBar position="fixed" color="primary" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }} >
+    <Box sx={{ flexGrow: 1 }} className= "AppBar">
+      <AppBar position="fixed" color="primary" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1,  }} >
         <Toolbar>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            {/* <Image
-        style={styles.tinyLogo}
-        source={{
-          uri:"https://res.cloudinary.com/andreahabib/image/upload/v1643912027/ARC_b6azyw.svg",
-        }}
-      /> */}
             <img alt="arc logo" src={logo} height="60px" width="60px" />
             <img
               alt="academic resource centre"
@@ -125,9 +119,14 @@ function ResponsiveAppBar() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem component ={Link} to= "/">Home</MenuItem>
-        <MenuItem component={Link} to = "/Academics"> Academics</MenuItem>
-        <MenuItem component={Link} to = "/Career"> Career</MenuItem>
+          {/*
+                Menu components might need SX in order to work properly, Temporary solution in CSS.
+          */}
+          <Box className="Menu">
+              <MenuItem component ={Link} to= "/">Home</MenuItem>
+              <MenuItem component={Link} to = "/Academics"> Academics</MenuItem>
+              <MenuItem component={Link} to = "/Career"> Career</MenuItem>
+          </Box>
 
       </Menu>
 

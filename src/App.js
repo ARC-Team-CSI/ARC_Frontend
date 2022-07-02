@@ -14,7 +14,7 @@ import Degree from "./app/pages/Degree";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
