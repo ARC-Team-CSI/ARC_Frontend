@@ -88,16 +88,16 @@ function PermanentDrawerLeft() {
                         </div>
                     </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <SimpleAccordion schoolYear = "freshman"/>
+                    <SimpleAccordion schoolYear = {0}/>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    <SimpleAccordion schoolYear = "sophomore"/>
+                    <SimpleAccordion schoolYear = {1}/>
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                    <SimpleAccordion schoolYear = "junior"/>
+                    <SimpleAccordion schoolYear = {2}/>
                 </TabPanel>
                 <TabPanel value={value} index={4}>
-                    <SimpleAccordion schoolYear = "senior"/>
+                    <SimpleAccordion schoolYear = {3}/>
                 </TabPanel>
                 </div>
             </Box>
